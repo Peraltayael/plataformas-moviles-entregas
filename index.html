@@ -1,69 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de desarrollo de software para plataformas moviles</title>
-    
-</head>
-<style>
- body{
-
-        background-color: rgb(128, 203, 196);
-    
+    <title>Entregas</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
     }
     
-    .ab{
-    background-color: rgb(224, 215, 250);
-    display: inline-block;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    box-sizing: border-box;
-    float: left;
-    margin: 10px;
-
-}
-a{
-        color: black;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #800000;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    .main-content {
+        background-color: #252525;
+        padding: 20px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    .box {
+        background-color: #800000;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .box h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .box p {
+        margin-bottom: 0;
+        color: #ccc;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 2px solid #800000;
+    }
+    a{
+        color: white;
         text-decoration: none;
       }
     a:hover{
-        color:blueviolet ;
-        
+        color: rgb(105, 105, 105) ;
+
        
       }
       ul li{
         list-style: none;
       }
       ul li:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
 
-</style>
-<body bgcolor: rgb(128, 203, 196)>
-  <center><h1><u> Proyecto de desarrollo de software para plataformas moviles</u></h1></center>
- <h2>Peralta Yael</h2>
 
- <div class="ab">
-     <h3>Trabajo practico n°1</h3>
-     <ul>
-     <LI><a href="tp-1/index.html"> Ejercicio 1</a>
-     <br>
-     </ul>   
- </div>
- 
-   <div class="ab">
-  <h3>Trabajo practico n°2</h3>
-     <ul>
-     <LI><a href="tp-2/index.html"> Ejercicio 1</a>
-     <br>
-     </ul>      
- </div>
-
-
+</style>    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Proyecto de Desarrollo de Software para Plataformas Moviles</h1>
+            <h2>Peralta Yael</h2>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="box">
+                <ul>
+                <li><h2><a href="tp-1/index.html">Trabajo practico n°1</a></h2></li>
+                <p>HTML</p>
+                
+            </ul>
+            </div>
+            <div class="box">
+                <ul>
+                <li><h2><a href="tp-2/index.html">Trabajo practico n°2 </a></h2></li>
+                <p>CSS/selectores</p>
+            </ul>
+            </div>
+            <div class="box">
+                <ul>
+              <li> <h2><a href="tp-3/">Trabajo practico n°3</a></h2></li>
+                <p>...</p>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>7°3°</p>
+        </div>
+    </footer>
 </body>
 </html>
