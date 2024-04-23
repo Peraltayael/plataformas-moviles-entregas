@@ -4,117 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entregas</title>
-    <style>
+<style>
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #1a1a1a;
-    }
-    
-    .container {
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-        border-bottom: 2px solid #800000;
-    }
-    
-    h1 {
-        margin: 0;
-    }
-    
-    .main-content {
-        background-color: #252525;
-        padding: 20px 0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-    
-    .box {
-        background-color: #800000;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .box h2 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: #fff;
-    }
-    
-    .box p {
-        margin-bottom: 0;
-        color: #ccc;
-    }
-    
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        border-top: 2px solid #800000;
-    }
-    a{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#1a1a1a;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #800000;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-content {
+    background-color: #252525;;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: auto; 
+}
+
+.box {
+    background-color: #800000;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    float: left; 
+    box-sizing: border-box;
+}
+
+.box:nth-child(2n) {
+    margin-right: 0;
+}
+
+.box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #800000;
+}
+a{
         color: white;
         text-decoration: none;
-      }
-    a:hover{
-        color: rgb(105, 105, 105) ;
-
-       
-      }
-      ul li{
+}
+a:hover{
+        color: rgb(105, 105, 105) ;       
+}
+ul li{
         list-style: none;
-      }
-      ul li:hover{
+}
+ul li:hover{
         transform: scale(1.1);
-      }
-
-
-</style>    
+}
+</style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Proyecto de Desarrollo de Software para Plataformas Moviles</h1>
-            <h2>Peralta Yael</h2>
+            <h1>Mis Enlaces</h1>
         </div>
     </header>
     <div class="main-content">
         <div class="container">
             <div class="box">
                 <ul>
-                <li><h2><a href="tp-1/index.html">Trabajo practico n°1</a></h2></li>
+                <li><h2><a href="tp-1/index.html">Ejercicio 1</a></h2></li>
+            </ul>
                 <p>HTML</p>
-                
-            </ul>
             </div>
             <div class="box">
-                <ul>
-                <li><h2><a href="tp-2/index.html">Trabajo practico n°2 </a></h2></li>
-                <p>CSS/selectores</p>
+            <ul>
+               <li> <h2><a href="tp-2/index.html">Ejercicio 2</a></h2></li>
             </ul>
+                <p>CSS/Selectores</p>
             </div>
             <div class="box">
-                <ul>
-              <li> <h2><a href="tp-3/index.html">Trabajo practico n°3</a></h2></li>
+            <ul>
+            <li><h2><a href="tp-3/index.html">Ejercicio 3</a></h2></li>
+            </ul>
                 <p>CSS/Especificiedad</p>
+            </div>
+            <div class="box">
+            <ul>
+            <li><h2><a href="tp-4/index.html">Ejercicio 4</a></h2></li>
             </ul>
+                <p>CSS/Media query</p>
             </div>
         </div>
     </div>
     <footer>
         <div class="container">
-            <p>7°3°</p>
+            <p>Peralta Yael</p>
+            <P>7°3°</P>
         </div>
     </footer>
 </body>
