@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centrar enlaces con Bootstrap y CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+body {
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+.main-content {
+    background-color: #252525;;
+    padding: 100px 0;
+    box-shadow: 10 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow: auto; 
+}
+.caja {
+    width: 90%;
+    margin: 60px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh; /* Mueve el contenedor hacia arriba la mitad de la altura de la ventana */
+  transform: translateY(-50%);
+}
+
+.links a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #800000; /* Rojo */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #800000; /* Rojo oscuro */
+  transform: translateY(-3px);
+}
+
+.links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="main-content">
+<div class="caja">
+  <div class="row">
+    <div class="col">
+      <nav class="links">
+        <a href="layout-1.html">layout 1</a>
+        <a href="layout-2.html">layout 2</a>
+        <a href="layout-3.html">layout 3</a>
+      </nav>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
