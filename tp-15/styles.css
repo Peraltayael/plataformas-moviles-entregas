@@ -1,0 +1,22 @@
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    overflow: hidden;
+    margin: 10px;
+    width: 18rem;
+    text-align: center;
+}
+
+.recipe-card img {
+    height: 12rem;
+    object-fit: cover;
+}
+
+.recipe-details {
+    padding: 1rem;
+}
+
+.recipe-details ul {
+    list-style: none;
+    padding: 0;
+}
